@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.print-area{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(31, 34, 43);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.5);
+}
+
+.header-text{
+    color: white;
+    width: 70%;
+    margin-left: auto;
+} 
+
+.header-text h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.header-text p{
+    font-size: 20px;
+    color: lightgray;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-area{
+    width: 30%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+}
+
+.left-area .contact{
+    margin-top: 130px;
+    padding: 0 30px;
+}
+
+.contact h4{
+    font-size: 28px;
+    font-weight: normal;  
+    margin: 18px 0;
+}
+
+.contact h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact p{
+    font-size: 17px;
+}
+
+.skills{
+    margin-top: 30px;
+}
+
+.skills h4{
+    font-size: 28px;
+    font-weight: normal;  
+    margin: 18px 0;
+}
+
+.skills p{
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.right-area{
+    width: 70%;
+    padding: 50px;
+}
+
+.right-area h1{
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.right-area p{
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.education{
+    position: relative;
+    margin: 18px 0;
+}
+
+.education h3{
+    font-size: 23px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.education h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 2px 0;
+}
+
+.education h5{
+    font-size: 18px;
+    font-weight: normal;
+    margin: 2px 0;
+}
+
+.education h6{
+    font-weight: normal;
+    font-size: 17px;
+    color: gray;
+    margin: 2px 0;
+}
+
+.experience{
+    position: relative;
+    margin: 18px 0;
+}
+
+.experience h6{
+    font-weight: normal;
+    font-size: 17px;
+    color: gray;
+    margin: 2px 0;
+}
+
+.projects{
+    position: relative;
+    margin: 18px 0;
+}
+
+.projects h6{
+    font-weight: normal;
+    font-size: 17px;
+    color: gray;
+    margin: 2px 0;
+}
+
+.button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140px;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    filter: grayscale(50%);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+@media print{
+    body *{
+        visibility: hidden;
+    }
+    .print-area *{
+        visibility: visible;
+    }
+}
